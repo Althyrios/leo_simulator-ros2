@@ -41,6 +41,12 @@ def generate_launch_description():
       'config',
       'gz_bridge.yaml'
       )
+    
+    realsense_bridge_config = os.path.join(
+        get_package_share_directory('leo_gz_bringup'),
+        'config',
+        'realsense_bridge.yaml'
+        )
 
     sim_world = DeclareLaunchArgument(
         "sim_world",
@@ -98,6 +104,18 @@ def generate_launch_description():
         output="screen",
     )
 
+    realsense_topic_bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        name="realsense_bridge",
+        # arguments=['0', '0', '0', '-0.5', '0.5', '-0.5', '0.5', "realsense_camera_optical_frame", "leo/realsense_d4555"],
+        parameters=[
+            {
+                "config_file": realsense_bridge_config,
+            }
+        ],
+    )
+
     return LaunchDescription(
         [
             sim_world,
@@ -106,5 +124,6 @@ def generate_launch_description():
             spawn_robot,
             topic_bridge,
             lidar_topic_bridge,
+            realsense_topic_bridge,
         ]
     )
