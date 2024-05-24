@@ -12,11 +12,11 @@ Packages to simulate Leo Rover in ROS 2.
 3. Clone [leo_common-ros2](https://github.com/LeoRover/leo_common-ros2) repository into the workspace:
    ```
    cd your_workspace_name/src
-   git clone https://github.com/LeoRover/leo_common-ros2
+   git clone https://github.com/Althyrios/leo_common-ros2.git
    ```
 4. Clone this repository into the workspace:
    ```
-   git clone https://github.com/LeoRover/leo_simulator-ros2
+   git clone https://github.com/Althyrios/leo_simulator-ros2.git
    ```
 5. If using Gazebo Garden (skip this step if using Fortress):
    ```
@@ -51,3 +51,13 @@ Add another leo rover to an already running gazebo world:
    ```
    ros2 launch leo_gz_bringup spawn_robot.launch.py robot_ns:=your_namespace
    ```
+
+### Launching RTAB-MAP 
+
+Launch RTAB-MAP with only 3D Lidar
+
+```
+ros2 launch rtabmap_livox rtabmap_livox.launch.py
+```
+
+
