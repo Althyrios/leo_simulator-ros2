@@ -1,8 +1,0 @@
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/uninstall.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/leo_simulator_uninstall.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/test.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/edit_cache.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/rebuild_cache.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/list_install_components.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/install.dir
-/home/ism_student_2023/ros2_ws/src/leo_simulator-ros2/build/leo_simulator/CMakeFiles/install/local.dir
